@@ -11,7 +11,7 @@ describe('Book service', () => {
     test('GET /books/:id returns the book, or 404', async () => {
         const ok = await request(app).get('/books/1');
         expect(ok.status).toBe(200);
-        expect(ok.body).toHaveProperty('id', 1);
+        expect(ok.body).toHaveProperty('id', "1");
 
         const notFound = await request(app).get('/books/9999');
         expect(notFound.status).toBe(404);

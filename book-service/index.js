@@ -4,7 +4,7 @@ const books = require('./books.json');
 const app = express();
 app.use(express.json());
 
-app.get('/books', (res) => {
+app.get('/books', (req, res) => {
     res.json(books);
 });
 
@@ -21,3 +21,5 @@ app.get('/books/:id', (req, res) => {
 
 const PORT = process.env.PORT || 8082;
 app.listen(PORT);
+
+module.exports = app;
