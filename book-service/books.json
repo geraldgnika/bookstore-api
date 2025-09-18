@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "name": "The Interpretation of Dreams",
+    "author": "Sigmund Freud",
+    "totalPages": 700
+  },
+  {
+    "id": "2",
+    "name": "On the Genealogy of Morality",
+    "author": "Friedrich Nietzsche",
+    "totalPages": 250
+  },
+  {
+    "id": "3",
+    "name": "12 Rules for Life",
+    "author": "Jordan Peterson",
+    "totalPages": 400
+  },
+  {
+    "id": "4",
+    "name": "Being and Time",
+    "author": "Martin Heidegger",
+    "totalPages": 500
+  },
+  {
+    "id": "5",
+    "name": "The Republic",
+    "author": "Plato",
+    "totalPages": 500
+  },
+  {
+    "id": "6",
+    "name": "Man and His Symbols",
+    "author": "Carl Jung",
+    "totalPages": 300
+  },
+  {
+    "id": "7",
+    "name": "The Problems of Philosophy",
+    "author": "Bertrand Russell",
+    "totalPages": 200
+  },
+  {
+    "id": "8",
+    "name": "The World as Will and Representation",
+    "author": "Arthur Schopenhauer",
+    "totalPages": 1000
+  },
+  {
+    "id": "9",
+    "name": "The Phenomenology of Spirit",
+    "author": "G.W.F. Hegel",
+    "totalPages": 700
+  }
+]
