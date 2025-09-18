@@ -2,45 +2,44 @@
 
 A **Bookstore API** built with **Node.js** and **Express**, that has two services: the **User Service** and the **Book Service**. It has endpoints for fetching users and books, showing how many pages did a user read and also it has the option to export as a CSV file.
 
-- **user-service**: handles users (list and details), their reading progress, and CSV export reports.  
-- **book-service**: provides book data (list and details).  
+- **user-service**: handles users (list and details), their reading progress, and CSV export reports.
+- **book-service**: provides book data (list and details).
 
 ---
 
 ## Table of Contents
-1. [Services](#services)  
-2. [Installation](#installation)  
-3. [Running](#running)  
-4. [API Routes](#api-routes)  
-5. [Testing](#testing)  
-6. [Improvement Notes](#improvement-notes)  
+1. [Services](#services)
+2. [Installation](#installation)
+3. [Running](#running)
+5. [Testing](#testing)
+6. [Improvement Notes](#improvement-notes)
 
 ---
 
 ## Services
 
 ### Book Service
-- **Port:** `8082`  
+- **Port:** `8082`
 - **Endpoints:**
-  - `GET /books` → List all books  
-  - `GET /books/:id` → Get book by ID  
+  - `GET /books` → List all books
+  - `GET /books/:id` → Get book by ID
 
-**Data:** Stored in `book-service/books.json`  
+**Data:** Stored in `book-service/books.json`
 
 ---
 
 ### User Service
-- **Port:** `8081`  
+- **Port:** `8081`
 - **Endpoints:**
-  - `GET /users` → List all users  
-  - `GET /users/:id` → Get user by ID  
+  - `GET /users` → List all users
+  - `GET /users/:id` → Get user by ID
   - `POST /users/export` → Generate a CSV report for the book readings of all users
 
-**CSV Output Columns:**  
+**CSV Output Columns:**
 ```
 User Id | First Name | Last Name | Date | Book | Pages Read
 ```
-- `Book` comes from the book-service.  
+- `Book` comes from the book-service.
 - `Pages Read` = `totalPages * percentageRead`.
 
 **Data:** Stored in `user-service/users.json`
